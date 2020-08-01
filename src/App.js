@@ -1,14 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Home from './componenets/home';
-import Body from './componenets/body';
+import { Header } from './componenets/Header';
+import { Balance } from './componenets/Balance';
+import { IncomeExpenses } from './componenets/IncomeExpenses';
+import { TransactionList } from './componenets/TransactionList';
+import { AddTransaction } from './componenets/AddTransaction';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
-      <Body/>
+      <Header/>
+      <div className="container">
+      <Balance/>
+      <IncomeExpenses/>
+      <TransactionList/>
+      <AddTransaction/>
+
+      </div>
+  
     </div>
   );
 }
